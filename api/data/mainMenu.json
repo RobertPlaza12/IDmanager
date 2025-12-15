@@ -1,0 +1,6 @@
+[
+  { "nombre": "Inicio", "url": "index.html" },
+  { "nombre": "Inventario", "url": "inventario.html" },
+  { "nombre": "Reportes", "url": "reportes.html" },
+  { "nombre": "Registro", "url": "log.html" }
+]
