@@ -1,10 +1,12 @@
-import API_CONFIG from 'apiConfig.js';
+//import API_CONFIG from "apiConfig.js";
 
 async function cargarMenu() {
     try {
         const url = API_CONFIG.BASE_URL + API_CONFIG.ENDPOINTS.MAINMENU;
         const response = await fetch(url);
         
+        //throw new Error(url);
+
         if (!response.ok) {
             throw new Error(`Error HTTP: ${response.status}`);
         }
