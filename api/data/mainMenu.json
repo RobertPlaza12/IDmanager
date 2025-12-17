@@ -1,6 +1,29 @@
-[
-  { "nombre": "Inicio", "url": "index.html" },
-  { "nombre": "Inventario", "url": "inventario.html" },
-  { "nombre": "Reportes", "url": "reportes.html" },
-  { "nombre": "Registro", "url": "log.html" }
-]
+{
+  "mainMenu": [
+    {
+      "id": 1,
+      "name": "Inicio",
+      "icon": "ri-home-2-fill",
+      "active": true,
+      "url": "index.html"
+    },
+    {
+      "id": 2,
+      "name": "Inventario",
+      "icon": "ri-archive-drawer-fill",
+      "url": "inventario.html"
+    },
+    {
+      "id": 3,
+      "name": "Reportes",
+      "icon": "ri-bar-chart-2-fill",
+      "url": "reportes.html"
+    },
+    {
+      "id": 4,
+      "name": "Registro",
+      "icon": "ri-git-repository-line",
+      "url": "registro.html"
+    }
+  ]
+}
