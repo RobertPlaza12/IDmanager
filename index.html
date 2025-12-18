@@ -4,58 +4,6 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Inicio</title>
-      <style>
-        .acordeon-item {
-            margin-bottom: 10px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            overflow: hidden;
-        }
-        
-        .acordeon-titulo {
-            background-color: #f5f5f5;
-            padding: 15px;
-            cursor: pointer;
-            font-weight: bold;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            transition: background-color 0.3s;
-        }
-        
-        .acordeon-titulo:hover {
-            background-color: #e9e9e9;
-        }
-        
-        .acordeon-contenido {
-            padding: 0;
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.3s ease-out, padding 0.3s;
-        }
-
-        .acordeon-contenido ul {
-            padding: 0;
-            margin-left: 20px;
-        }
-        
-        .acordeon-checkbox {
-            display: none;
-        }
-        
-        .acordeon-checkbox:checked + .acordeon-titulo + .acordeon-contenido {
-            max-height: 500px; /* Ajusta según tu contenido */
-            padding: 15px;
-        }
-        
-        .acordeon-checkbox:checked + .acordeon-titulo .icono {
-            transform: rotate(180deg);
-        }
-        
-        .icono {
-            transition: transform 0.3s;
-        }
-    </style>
 
   <link rel="stylesheet" href="data/styles.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css">
