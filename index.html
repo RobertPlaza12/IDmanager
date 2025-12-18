@@ -4,6 +4,58 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Inicio</title>
+      <style>
+        .acordeon-item {
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        
+        .acordeon-titulo {
+            background-color: #f5f5f5;
+            padding: 15px;
+            cursor: pointer;
+            font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background-color 0.3s;
+        }
+        
+        .acordeon-titulo:hover {
+            background-color: #e9e9e9;
+        }
+        
+        .acordeon-contenido {
+            padding: 0;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out, padding 0.3s;
+        }
+
+        .acordeon-contenido ul {
+            padding: 0;
+            margin-left: 20px;
+        }
+        
+        .acordeon-checkbox {
+            display: none;
+        }
+        
+        .acordeon-checkbox:checked + .acordeon-titulo + .acordeon-contenido {
+            max-height: 500px; /* Ajusta según tu contenido */
+            padding: 15px;
+        }
+        
+        .acordeon-checkbox:checked + .acordeon-titulo .icono {
+            transform: rotate(180deg);
+        }
+        
+        .icono {
+            transition: transform 0.3s;
+        }
+    </style>
 
   <link rel="stylesheet" href="data/styles.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css">
@@ -21,15 +73,29 @@
 
   <div class="main-content">
       <h1>Inicio</h1>
-      <p>"aqui se explica la pagina bla bla bla"</p>
+      <p>Esta plataforma administra el flujo completo de expedientes en <strong>Admisiones</strong>. 
+      A continuación, se detalla el instructivo para el uso correcto del sistema.</p>
       
-      <h2>Funcionalidades o ejemplo de uso:</h2>
-      <ul>
-          <li>funcionalidad</li>
-          <li>uso</li>
-          <li>etc</li>
-          <li>bla bla bla</li>
-      </ul>
+      <input type="checkbox" id="item1" class="acordeon-checkbox">
+      <label for="item1" class="acordeon-titulo">
+          Instructivo
+          <span class="icono">▼</span>
+      </label>
+      <div class="acordeon-contenido">
+          <p>Aquí va el contenido de tu instructivo. Puedes poner:</p>
+          <ul>
+              <li><strong>Menú de Navegación:</strong> En el panel lateral encontrará las siguientes opciones principales: 
+              inventario, reportes, registro, otras funcionalidades. Cada módulo cumple una función específica dentro del ciclo de gestión documental.</li>
+              <li><strong>Módulo de Inventario:</strong> Gestiona el inventario completo de expedientes, aquí se puede agregar nuevos expedientes, 
+              editar expedientes, registrar expedientes enviados, registrar devoluciones de expedientes y prestamos de expedientes.</li>
+              <li><strong>Módulo de Reportes:</strong> Consulte métricas y análisis del flujo de los expedientes, estadísticas históricas del manejo de expedientes, 
+              gráficos temporales de movimientos, reportes de; expedientes agregados, expedientes enviados, devoluciones procesadas, préstamos activos
+              <li><strong>Módulo de Registro:</strong> Bitácora completa de actividades del sistema, registro cronológico de todas las operaciones realizadas por cada usuario, permitiendo: 
+              seguimiento de actividades, auditoría de procesos, control de accesos.</li>
+              <li><strong>Gestión de Usuarios:</strong> Administración de cuentas de acceso, "Cada usuario representa a la persona responsable del manejo de su cuenta, con permisos y responsabilidades específicas dentro del sistema."</li>
+          </ul>
+      </div>
+
   </div>
 
   <script src="script/apiConfig.js"></script>
